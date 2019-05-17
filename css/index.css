@@ -1,5 +1,5 @@
-
-
+/*--------------------------------------------------------------------响应式设置-----------------------------------------------------------------------------*/
+/*设置屏幕小于768px的样式*/
 @media (max-width: 768px) {
     .header{
         display: block;
@@ -37,6 +37,7 @@
         color: #ffffff;
     }
 }
+/*屏幕宽度768~992的样式*/
 @media (min-width: 768px) and (max-width: 992px){
     .header{
         display: block;
@@ -93,7 +94,7 @@
         clear: both;
     }
 }
-
+/*屏幕小于992px的样式*/
 @media (min-width: 992px) {
     .header{
         display: block;
@@ -113,7 +114,14 @@
         background-color: #03142e;
 
     }
+    /*设置中间容器的的背景*/
+    .middle-container{
+        width: 100%;
+        background-color: #F9F9F9;
+    }
 }
+
+/*导航栏里下拉菜单样式设置*/
 .nav.navbar-nav>li>a{
     color: #ffffff;
 }
@@ -127,6 +135,8 @@
     white-space: nowrap;
     border-bottom: 1px solid #fff1f1;
 }
+/*--------------------------------------------------------------------轮播图-----------------------------------------------------------------------------*/
+/*轮播图片样式*/
 .item img{
     width: 533px;
     margin: 0px auto
@@ -142,21 +152,21 @@
     text-align: center;
     top:0;
 }
-
-.inside-tb p{
+/*轮播图片介绍样式*/
+.inside-tb p {
     margin-top: 1%;
     display: block;
     color: white;
 }
-.inside-tb p:hover{
-    text-decoration:underline ;/*下划线*/
+
+.inside-tb p:hover {
+    text-decoration: underline; /*下划线*/
 }
 
-
+/*--------------------------------------------------------------------主体设置-----------------------------------------------------------------------------*/
 /*标题*/
 .block-title h2 {
     border-bottom: 0;
-    padding: 10px;
     font-size: 16px;
     font-weight: bold;
     color: #005624;
@@ -164,12 +174,27 @@
 
 /*新闻栏*/
 .news-content{
+    list-style-type: none;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px dashed #e2e2e2;
     white-space: nowrap;/*文本不换行*/
 }
-
+/*设置ul和h2标题平齐*/
+.list-content{
+    padding: 0;
+}
+/*设置···更多居右边*/
+.align-right{
+    position: absolute;
+    right: 15px;
+    color: #03142e;
+    /*background-color: #03142e;*/
+    font-size: 20px;
+    /*padding: 2px 5px 0px 5px;*/
+    /*border: 0px solid #03142e;*/
+    /*border-radius: 10px;*/
+}
 /*设置news标题和时间的下划线字体*/
 .news-content span,
 .news-title a{
@@ -192,18 +217,18 @@
 .f-l {
     float: left;
 }
-.more-link{
-    position: absolute;
-    text-indent: -999px;
-    font-size: 0;
-    top: 10px;
-    right: 10px;
-    width: 36px;
-    height: 17px;
-    background-image: url("../image/redmore.gif")
-}
+/*设置more的样式 目前已废弃 更改图片可使用*/
+/*.more-link{*/
+    /*position: absolute;*/
+    /*text-indent: -999px;*/
+    /*font-size: 0;*/
+    /*right: 10px;*/
+    /*width: 36px;*/
+    /*height: 17px;*/
+    /*background-image: url("../image/redmore.gif")*/
+/*}*/
 
-
+/*--------------------------------------------------------------------底部设置-----------------------------------------------------------------------------*/
 /*底部*/
 .footer {
     clear: both;
