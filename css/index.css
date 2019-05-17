@@ -1,6 +1,6 @@
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .header{
         display: block;
         max-width: 100%;
@@ -13,6 +13,7 @@
         -webkit-background-size: 100% 100%;
         background-size: 100% 100%;
         background-image: url("../image/headerphoto768.jpg");
+        margin-bottom: 10px;
     }
     .navbar-inverse{
         opacity: 0.95;
@@ -32,8 +33,68 @@
     .navbar-collapse{
         background-color: #03142e;
     }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
 }
-@media (min-width: 766px) {
+@media (min-width: 768px) and (max-width: 992px){
+    .header{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        background-color: #03142e;
+    }
+    .header .container{
+        padding-top: 20%;
+        background-image: url("../image/headerphoto.jpg");
+        background-repeat: no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+        margin-bottom: 10px;
+    }
+    .navbar-inverse{
+        opacity: 0.95;
+    }
+    .navbar-static-top{
+        position: absolute;
+        z-index: 1000;
+        right: 0;
+        left: 0;
+        top: 0;
+        /*right: 0;*/
+        border-width: 0;
+    }
+    .navbar-header{
+        /*float: right;*/
+    }
+    .nav-style{
+        background-color: rgba(0,0,0,0);
+    }
+    .navbar-collapse{
+        background-color: #03142e;
+    }
+
+    .navbar-toggle{
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: hidden !important;
+    }
+    .collapse.in {
+             display: block !important;
+             height: auto !important;
+             padding-bottom: 0;
+             overflow: visible !important;
+         }
+    .navbar-nav>li{
+        clear: both;
+    }
+}
+
+@media (min-width: 992px) {
     .header{
         display: block;
         max-width: 100%;
@@ -53,4 +114,101 @@
 
     }
 }
+.nav.navbar-nav>li>a{
+    color: #ffffff;
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 5px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    border-bottom: 1px solid #fff1f1;
+}
+.item img{
+    width: 533px;
+    margin: 0px auto
+}
 
+/*文本样式*/
+.inside-tb{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(28,18,19,0.7);
+    text-align: center;
+    top:0;
+}
+
+.inside-tb p{
+    margin-top: 1%;
+    display: block;
+    color: white;
+}
+.inside-tb p:hover{
+    text-decoration:underline ;/*下划线*/
+}
+
+
+/*标题*/
+.block-title h2 {
+    border-bottom: 0;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #005624;
+}
+
+/*新闻栏*/
+.news-content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #e2e2e2;
+    white-space: nowrap;/*文本不换行*/
+}
+
+/*设置news标题和时间的下划线字体*/
+.news-content span,
+.news-title a{
+    font-size: 14px;
+    color: #555;
+}
+
+/*设置新闻标题*/
+.news-title{
+    padding-right: 53px;
+    margin-left: 14px;
+    overflow: hidden;/*溢出隐藏*/
+    text-overflow: ellipsis; /*显示省略符号来代表被修剪的文本*/
+    white-space: nowrap;/*设置元素中空白的处理方式：规定段落中的文本不进行换行*/
+}
+
+.f-r {
+    float: right;
+}
+.f-l {
+    float: left;
+}
+.more-link{
+    position: absolute;
+    text-indent: -999px;
+    font-size: 0;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 17px;
+    background-image: url("../image/redmore.gif")
+}
+
+
+/*底部*/
+.footer {
+    clear: both;
+    width: 100%;
+    height: 220px;
+    background-color: #03142e;
+    margin: 5px auto;
+}
