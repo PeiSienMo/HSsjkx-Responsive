@@ -1,13 +1,14 @@
 /*--------------------------------------------------------------------响应式设置-----------------------------------------------------------------------------*/
 /*设置屏幕小于768px的样式*/
 @media (max-width: 768px) {
-    .header{
+    .header {
         display: block;
         max-width: 100%;
         height: auto;
         background-color: #03142e;
     }
-    .header .container{
+
+    .header .container {
         padding-top: 35%;
         background-repeat: no-repeat;
         -webkit-background-size: 100% 100%;
@@ -15,10 +16,12 @@
         background-image: url("../image/headerphoto768.jpg");
         margin-bottom: 10px;
     }
-    .navbar-inverse{
+
+    .navbar-inverse {
         opacity: 0.95;
     }
-    .navbar-static-top{
+
+    .navbar-static-top {
         position: absolute;
         z-index: 1000;
         right: 0;
@@ -27,25 +30,38 @@
         /*right: 0;*/
         border-width: 0;
     }
-    .nav-style{
-        background-color: rgba(0,0,0,0);
+
+    .nav-style {
+        background-color: rgba(0, 0, 0, 0);
     }
-    .navbar-collapse{
+
+    .navbar-collapse {
         background-color: #03142e;
     }
+
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #ffffff;
     }
+
+    /*隐藏footer图片与友情链接*/
+    .ft-hide {
+        display: none;
+    }
+   .ft-adr{
+        margin-left: 20px;
+    }
 }
+
 /*屏幕宽度768~992的样式*/
-@media (min-width: 768px) and (max-width: 992px){
-    .header{
+@media (min-width: 768px) and (max-width: 992px) {
+    .header {
         display: block;
         max-width: 100%;
         height: auto;
         background-color: #03142e;
     }
-    .header .container{
+
+    .header .container {
         padding-top: 20%;
         background-image: url("../image/headerphoto.jpg");
         background-repeat: no-repeat;
@@ -53,10 +69,12 @@
         background-size: 100% 100%;
         margin-bottom: 10px;
     }
-    .navbar-inverse{
+
+    .navbar-inverse {
         opacity: 0.95;
     }
-    .navbar-static-top{
+
+    .navbar-static-top {
         position: absolute;
         z-index: 1000;
         right: 0;
@@ -65,66 +83,85 @@
         /*right: 0;*/
         border-width: 0;
     }
-    .navbar-header{
+
+    .navbar-header {
         /*float: right;*/
     }
-    .nav-style{
-        background-color: rgba(0,0,0,0);
+
+    .nav-style {
+        background-color: rgba(0, 0, 0, 0);
     }
-    .navbar-collapse{
+
+    .navbar-collapse {
         background-color: #03142e;
     }
 
-    .navbar-toggle{
+    .navbar-toggle {
         display: block;
     }
+
     .navbar-collapse.collapse {
         display: none !important;
         height: auto !important;
         padding-bottom: 0;
         overflow: hidden !important;
     }
+
     .collapse.in {
-             display: block !important;
-             height: auto !important;
-             padding-bottom: 0;
-             overflow: visible !important;
-         }
-    .navbar-nav>li{
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+
+    .navbar-nav > li {
         clear: both;
     }
+
+    /*隐藏footer图片与友情链接*/
+    .ft-hide {
+        display: none;
+    }
+    .ft-adr{
+        margin-left: 20px;
+    }
 }
-/*屏幕小于992px的样式*/
+
+/*屏幕大于992px的样式*/
 @media (min-width: 992px) {
-    .header{
+    .header {
         display: block;
         max-width: 100%;
         height: auto;
         background-color: #03142e;
     }
-    .header .container{
+
+    .header .container {
         padding-top: 12%;
         background-image: url("../image/headerphoto.jpg");
         background-repeat: no-repeat;
         -webkit-background-size: 100% 100%;
         background-size: 100% 100%;
     }
-    .nav-style{
+
+    .nav-style {
         margin-top: 1px;
         background-color: #03142e;
 
     }
+
     /*设置中间容器的的背景*/
-    .middle-container{
+    .middle-container {
         width: 100%;
         background-color: #F9F9F9;
     }
 }
 
 /*导航栏里下拉菜单样式设置*/
-.nav.navbar-nav>li>a{
+.nav.navbar-nav > li > a {
     color: #ffffff;
 }
+
 .dropdown-menu > li > a {
     display: block;
     padding: 5px 20px;
@@ -135,23 +172,25 @@
     white-space: nowrap;
     border-bottom: 1px solid #fff1f1;
 }
+
 /*--------------------------------------------------------------------轮播图-----------------------------------------------------------------------------*/
 /*轮播图片样式*/
-.item img{
+.item img {
     width: 533px;
     margin: 0px auto
 }
 
 /*文本样式*/
-.inside-tb{
+.inside-tb {
     position: absolute;
     z-index: 5;
     width: 100%;
     height: 15%;
-    background-color: rgba(28,18,19,0.7);
+    background-color: rgba(28, 18, 19, 0.7);
     text-align: center;
-    top:0;
+    top: 0;
 }
+
 /*轮播图片介绍样式*/
 .inside-tb p {
     margin-top: 1%;
@@ -173,19 +212,21 @@
 }
 
 /*新闻栏*/
-.news-content{
+.news-content {
     list-style-type: none;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px dashed #e2e2e2;
-    white-space: nowrap;/*文本不换行*/
+    white-space: nowrap; /*文本不换行*/
 }
+
 /*设置ul和h2标题平齐*/
-.list-content{
+.list-content {
     padding: 0;
 }
+
 /*设置···更多居右边*/
-.align-right{
+.align-right {
     position: absolute;
     right: 15px;
     color: #03142e;
@@ -195,37 +236,42 @@
     /*border: 0px solid #03142e;*/
     /*border-radius: 10px;*/
 }
+
 /*设置news标题和时间的下划线字体*/
 .news-content span,
-.news-title a{
+.news-title a {
     font-size: 14px;
     color: #555;
 }
 
 /*设置新闻标题*/
-.news-title{
+.news-title {
     padding-right: 53px;
     margin-left: 14px;
-    overflow: hidden;/*溢出隐藏*/
+    overflow: hidden; /*溢出隐藏*/
     text-overflow: ellipsis; /*显示省略符号来代表被修剪的文本*/
-    white-space: nowrap;/*设置元素中空白的处理方式：规定段落中的文本不进行换行*/
+    white-space: nowrap; /*设置元素中空白的处理方式：规定段落中的文本不进行换行*/
 }
 
 .f-r {
     float: right;
 }
+
 .f-l {
     float: left;
 }
+.block-title h2{
+    color: #03142e
+}
 /*设置more的样式 目前已废弃 更改图片可使用*/
 /*.more-link{*/
-    /*position: absolute;*/
-    /*text-indent: -999px;*/
-    /*font-size: 0;*/
-    /*right: 10px;*/
-    /*width: 36px;*/
-    /*height: 17px;*/
-    /*background-image: url("../image/redmore.gif")*/
+/*position: absolute;*/
+/*text-indent: -999px;*/
+/*font-size: 0;*/
+/*right: 10px;*/
+/*width: 36px;*/
+/*height: 17px;*/
+/*background-image: url("../image/redmore.gif")*/
 /*}*/
 
 /*--------------------------------------------------------------------底部设置-----------------------------------------------------------------------------*/
@@ -233,7 +279,50 @@
 .footer {
     clear: both;
     width: 100%;
-    height: 220px;
     background-color: #03142e;
     margin: 5px auto;
+}
+
+/*底部友情链接样式*/
+.footer a:link, .footer a:visited {
+    color: white;
+    display: block;
+    /*font-size: 17px;*/
+    width: 150px;
+    height: 15px;
+    text-decoration: none;
+    padding: 10px 0 10px 0;
+    text-align: left;
+}
+
+.footer a:hover, .footer a:active {
+    color: red;
+}
+
+/*底部公众号图片样式*/
+.footer_img img {
+    width: 84px;
+}
+
+.footer_img {
+    width: 84px;
+    float: left;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bolder;
+    color: white;
+}
+
+/*底部网站信息样式*/
+.ft-adr {
+    clear: both;
+    line-height: 150%;
+    /*font-size: 17px;*/
+    color: white;
+}
+
+.footer.col-md-4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
