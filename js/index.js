@@ -34,10 +34,10 @@ $(document).ready(function () {
 
         $("#side-nav").show();
         $(this).hide();
-        var w_width = ($(window).height()-$("#side-nav").height())/2;
+        // var w_width = ($(window).height()-$("#side-nav").height())/2;
 
         $("#side-nav").css({
-            top:w_width+"px"
+            top:top
         });
         $("#unDrag").css({
              left:left,
