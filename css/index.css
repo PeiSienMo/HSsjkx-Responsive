@@ -256,8 +256,10 @@
 }
 .iframe-show{
     width: 100%;
-    min-height: 245px;
-    overflow: hidden;
+    height: 245px;
+    overflow: scroll;
+    overflow-y:auto;
+    overflow-x:auto;
 }
 
 .f-r {
@@ -281,6 +283,28 @@
 /*background-image: url("../image/redmore.gif")*/
 /*}*/
 
+.T-img{
+    margin: 5px;
+    width: 100px;
+    overflow: hidden;
+    float: left;
+
+}
+.T-img>a{
+    display: block;
+    padding-top: 10px;
+}
+.T-p{
+    width: 100%;
+    color: #ffffff;
+    background-color: #03142e;
+    text-align: center;
+}
+.T-p p{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 /*--------------------------------------------------------------------底部设置-----------------------------------------------------------------------------*/
 /*底部*/
 .footer {
