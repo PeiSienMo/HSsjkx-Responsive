@@ -50,6 +50,7 @@
    .ft-adr{
         margin-left: 20px;
     }
+
 }
 
 /*屏幕宽度768~992的样式*/
@@ -171,6 +172,7 @@
     color: #333;
     white-space: nowrap;
     border-bottom: 1px solid #fff1f1;
+
 }
 
 /*--------------------------------------------------------------------轮播图-----------------------------------------------------------------------------*/
@@ -251,6 +253,11 @@
     overflow: hidden; /*溢出隐藏*/
     text-overflow: ellipsis; /*显示省略符号来代表被修剪的文本*/
     white-space: nowrap; /*设置元素中空白的处理方式：规定段落中的文本不进行换行*/
+}
+.iframe-show{
+    width: 100%;
+    min-height: 245px;
+    overflow: hidden;
 }
 
 .f-r {
