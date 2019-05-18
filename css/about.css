@@ -1,9 +1,32 @@
 /*Editor Mo;Time 2019/5/18;Tool idea;Tel 15360694561*/
 /*小于992px的屏幕隐藏分页面导航*/
+
 @media (max-width: 992px){
     .body-nav-hide{
         display: none !important;
     }
+    .side-nav{
+        position: absolute !important;
+        border-radius:0;
+        background-color:rgba(0,0,0,0);
+        width:150px !important;
+        height:auto;
+        right:0;
+        opacity:1;
+        z-index: 10;
+    }
+}
+@media (min-width: 992px){
+    .drag-hide{
+        display: none !important;
+    }
+    .unDrag-hide{
+        display: none !important;
+    }
+    .body_nav{
+        display: block !important;
+    }
+
 }
 /*地址显示*/
 ._location {
@@ -83,3 +106,31 @@
 /*.body-nav-hide{*/
     /*display: block;*/
 /*}*/
+
+.draggable-ui{
+    background-color: #03142e;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 0px solid red;
+    border-radius: 40px;
+    overflow: hidden;
+    opacity: 0.5;
+    z-index: 1100;
+}
+.draggable-ui span{
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 9px;
+    margin-left: 10px;
+
+}
+.nav-hide{
+    display: none;
+}
+
+.unDrag-hide{
+    display: none;
+}
