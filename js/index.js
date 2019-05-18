@@ -31,13 +31,13 @@ $(document).ready(function () {
     function drag() {
         var top = $(this).css('top');
         var left = $(this).css('left');
-
+var sideTop = parseInt(top)-110;
         $("#side-nav").show();
         $(this).hide();
         // var w_width = ($(window).height()-$("#side-nav").height())/2;
 
         $("#side-nav").css({
-            top:top
+            top:sideTop+"px"
         });
         $("#unDrag").css({
              left:left,
