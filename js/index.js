@@ -1,3 +1,4 @@
+/*Editor Mo;Time 2019/5/18;Tool idea;Tel 15360694561*/
 $(document).ready(function () {
     //定义变量获取屏幕视口宽度
     var windowWidth = parseInt($(window).width());
