@@ -195,13 +195,13 @@
 }
 
 /*轮播图片介绍样式*/
-.inside-tb p {
+.inside-tb a {
     margin-top: 1%;
     display: block;
     color: white;
 }
 
-.inside-tb p:hover {
+.inside-tb a:hover {
     text-decoration: underline; /*下划线*/
 }
 

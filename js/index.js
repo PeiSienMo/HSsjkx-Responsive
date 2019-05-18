@@ -2,21 +2,21 @@
 $(document).ready(function () {
     //定义变量获取屏幕视口宽度
     var windowWidth = parseInt($(window).width());
-    if(windowWidth > 992){
+    if (windowWidth > 992) {
         $(".dropdown").hover(function () {
             $(this).addClass("open");
             var a = $(this).find("a").first();
-            $(a).attr("aria-expanded","true");
-        },function () {
+            $(a).attr("aria-expanded", "true");
+        }, function () {
             $(this).removeClass("open");
             var a = $(this).find("a").first();
-            $(a).attr("aria-expanded","false");
+            $(a).attr("aria-expanded", "false");
         });
     }
-    $(function() {
+    $(function () {
         //轮播图自动播放
         $('#myCarousel').carousel({
-            interval: 3000,//自动播放4s
+            interval: 2000,//自动播放4s
 
         });
     });
@@ -31,20 +31,21 @@ $(document).ready(function () {
     function drag() {
         var top = $(this).css('top');
         var left = $(this).css('left');
-var sideTop = parseInt(top)-110;
+        var sideTop = parseInt(top) - 82;
         $("#side-nav").show();
         $(this).hide();
         // var w_width = ($(window).height()-$("#side-nav").height())/2;
 
         $("#side-nav").css({
-            top:sideTop+"px"
+            top: sideTop + "px"
         });
         $("#unDrag").css({
-             left:left,
-            top:top
+            left: left,
+            top: top
         });
         $("#unDrag").show();
     }
+
     function unDrag() {
         var top = $(this).css('top');
         var left = $(this).css('left');
@@ -55,8 +56,8 @@ var sideTop = parseInt(top)-110;
         // $("#draggable").find("span").css("display","block");
 
         $("#draggable").css({
-            left:left,
-            top:top
+            left: left,
+            top: top
         });
     }
 

@@ -15,6 +15,9 @@
         opacity:1;
         z-index: 10;
     }
+    .body_nav a:link, .body_nav a:visited {
+        font-size: 15px !important;
+    }
 }
 @media (min-width: 992px){
     .drag-hide{
@@ -25,6 +28,9 @@
     }
     .body_nav{
         display: block !important;
+    }
+    .nav-hide{
+        display: none !important;
     }
 
 }
